@@ -5,9 +5,9 @@ let userPassword = "abcde";
 function checkPasswordStrength(password) {
   if (password.length < 6) {
     return "Weak";
-  } else if (password.length >= 6 && password.length < 10) {
+  } else if (password.length >= 6 && password.length <= 10) {
     return "Medium";
-  } else if (password.length >= 10) {
+  } else if (password.length > 10) {
     return "Strong";
   }
 }
